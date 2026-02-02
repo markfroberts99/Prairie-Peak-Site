@@ -23,6 +23,10 @@
   display: block;
 }
 
+/* Offset anchor scrolling to account for sticky header */
+section[id] {
+  scroll-margin-top: 90px; /* tweak this number */
+}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:var(--font);color:var(--ink);background:var(--bg);scroll-behavior:smooth}
